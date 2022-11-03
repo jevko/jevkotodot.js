@@ -26,7 +26,6 @@ no [
         yes [
           [to array]
           fillcolor=[#ccffcc]
-          style=[filled]
         ]
         no [
           [error 2]
@@ -50,7 +49,6 @@ no [
           yes [
             [to object]
             fillcolor=[#ccffcc]
-            style=[filled]
           ]
         ]
       ]
