@@ -12,7 +12,7 @@
 <!-- _ -->
 <g id="node1" class="node">
 <title>_</title>
-<ellipse fill="none" stroke="black" cx="74.7" cy="-526" rx="46.29" ry="18"/>
+<ellipse fill="#ffffcc" stroke="black" cx="74.7" cy="-526" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="74.7" y="-522.3" font-family="Times,serif" font-size="14.00">simple?</text>
 </g>
 <!-- _0_ -->
@@ -31,7 +31,7 @@
 <!-- _1_ -->
 <g id="node3" class="node">
 <title>_1_</title>
-<ellipse fill="#ffffff" stroke="black" cx="188.7" cy="-439" rx="69.59" ry="18"/>
+<ellipse fill="#ffffcc" stroke="black" cx="188.7" cy="-439" rx="69.59" ry="18"/>
 <text text-anchor="middle" x="188.7" y="-435.3" font-family="Times,serif" font-size="14.00">suffix blank?</text>
 </g>
 <!-- _&#45;&gt;_1_ -->
@@ -70,7 +70,7 @@
 <!-- _1_1_0_ -->
 <g id="node6" class="node">
 <title>_1_1_0_</title>
-<ellipse fill="#ffffff" stroke="black" cx="277.7" cy="-279" rx="97.48" ry="18"/>
+<ellipse fill="#ffffcc" stroke="black" cx="277.7" cy="-279" rx="97.48" ry="18"/>
 <text text-anchor="middle" x="277.7" y="-275.3" font-family="Times,serif" font-size="14.00">first prefix empty?</text>
 </g>
 <!-- _1_1_&#45;&gt;_1_1_0_ -->
@@ -82,7 +82,7 @@
 <!-- _1_1_0_0_ -->
 <g id="node7" class="node">
 <title>_1_1_0_0_</title>
-<ellipse fill="#ffffff" stroke="black" cx="194.7" cy="-192" rx="66.09" ry="18"/>
+<ellipse fill="#ffffcc" stroke="black" cx="194.7" cy="-192" rx="66.09" ry="18"/>
 <text text-anchor="middle" x="194.7" y="-188.3" font-family="Times,serif" font-size="14.00">rest empty?</text>
 </g>
 <!-- _1_1_0_&#45;&gt;_1_1_0_0_ -->
@@ -95,7 +95,7 @@
 <!-- _1_1_0_1_ -->
 <g id="node10" class="node">
 <title>_1_1_0_1_</title>
-<ellipse fill="#ffffff" stroke="black" cx="361.7" cy="-192" rx="83.39" ry="18"/>
+<ellipse fill="#ffffcc" stroke="black" cx="361.7" cy="-192" rx="83.39" ry="18"/>
 <text text-anchor="middle" x="361.7" y="-188.3" font-family="Times,serif" font-size="14.00">rest nonempty?</text>
 </g>
 <!-- _1_1_0_&#45;&gt;_1_1_0_1_ -->
@@ -147,7 +147,7 @@
 <!-- _1_1_0_1_1_ -->
 <g id="node12" class="node">
 <title>_1_1_0_1_1_</title>
-<ellipse fill="#ffffff" stroke="black" cx="484.7" cy="-105" rx="87.99" ry="18"/>
+<ellipse fill="#ffffcc" stroke="black" cx="484.7" cy="-105" rx="87.99" ry="18"/>
 <text text-anchor="middle" x="484.7" y="-101.3" font-family="Times,serif" font-size="14.00">prefixes unique?</text>
 </g>
 <!-- _1_1_0_1_&#45;&gt;_1_1_0_1_1_ -->

@@ -2,14 +2,15 @@ import {parseJevko} from "https://cdn.jsdelivr.net/gh/jevko/parsejevko.js@v0.1.6
 import {jevkoToDot} from './mod.js'
 
 console.log(jevkoToDot(parseJevko(`[simple?]
+fillcolor=[#ffffcc]
+style=[filled]
 yes [
   [to string]
   fillcolor=[#ccffcc]
-  style=[filled]
 ]
 no [
   [suffix blank?]
-  fillcolor=[#ffffff]
+  fillcolor=[#ffffcc]
   no [
     [error 1]
     fillcolor=[#ffcccc]
@@ -19,6 +20,7 @@ no [
     fillcolor=[#ffffff]
     [
       [first prefix empty?]
+      fillcolor=[#ffffcc]
       yes [
         [rest empty?]
         yes [
@@ -33,14 +35,14 @@ no [
       ]
       no [
         [rest nonempty?]
-        fillcolor=[#ffffff]
+        fillcolor=[#ffffcc]
         no [
           [error 3]
           fillcolor=[#ffcccc]
         ]
         yes [
           [prefixes unique?]
-          fillcolor=[#ffffff]
+          fillcolor=[#ffffcc]
           no [
             [error 4]
             fillcolor=[#ffcccc]
