@@ -1,0 +1,1 @@
+deno run test.js | dot -o graph.svg -Tsvg
