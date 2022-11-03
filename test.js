@@ -2,26 +2,54 @@ import {parseJevko} from "https://cdn.jsdelivr.net/gh/jevko/parsejevko.js@v0.1.6
 import {jevkoToDot} from './mod.js'
 
 console.log(jevkoToDot(parseJevko(`[simple?]
-yes [to string]
+yes [
+  [to string]
+  fillcolor=[#ccffcc]
+  style=[filled]
+]
 no [
   [suffix blank?]
-  no [error 1]
+  fillcolor=[#ffffff]
+  no [
+    [error 1]
+    fillcolor=[#ffcccc]
+  ]
   yes [
     [trim prefixes]
+    fillcolor=[#ffffff]
     [
       [first prefix empty?]
       yes [
         [rest empty?]
-        yes [to array]
-        no [error 2]
+        yes [
+          [to array]
+          fillcolor=[#ccffcc]
+          style=[filled]
+        ]
+        no [
+          [error 2]
+          fillcolor=[#ffcccc]
+        ]
       ]
       no [
         [rest nonempty?]
-        no [error 3]
+        fillcolor=[#ffffff]
+        no [
+          [error 3]
+          fillcolor=[#ffcccc]
+        ]
         yes [
-          [rest unique?]
-          no [error 4]
-          yes [to object]
+          [prefixes unique?]
+          fillcolor=[#ffffff]
+          no [
+            [error 4]
+            fillcolor=[#ffcccc]
+          ]
+          yes [
+            [to object]
+            fillcolor=[#ccffcc]
+            style=[filled]
+          ]
         ]
       ]
     ]

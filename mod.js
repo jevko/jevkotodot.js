@@ -18,14 +18,28 @@ const jevkoToDotContent = (jevko, nodeId = "_") => {
     rootLabel = jevko.suffix.trim()
   }
 
-  let ret = `node [label=${JSON.stringify(rootLabel)}] ${nodeId}\n`
-  
+  const subnodes = []
+  const attrs = [["label=", JSON.stringify(rootLabel)]]
   for (let i = 1; i < subjevkos.length; ++i) {
     const {prefix, jevko} = subjevkos[i]
+    const label = prefix.trim()
+    if (label.endsWith('=')) {
+      if (jevko.subjevkos.length > 0) throw Error("complex attribute")
+      const value = jevko.suffix
+      attrs.push([label, JSON.stringify(value)])
+    }
+    else subnodes.push([label, jevko])
+  }
+  const attrstr = attrs.map(([k, v]) => `${k}${v}`).join(',')
+
+  let ret = `node [${attrstr}] ${nodeId}\n`
+  
+  for (let i = 0; i < subnodes.length; ++i) {
+    const [label, jevko] = subnodes[i]
     const subNodeId = nodeId + i + '_'
     // edgeLabels[subNodeId] = prefix
     ret += jevkoToDotContent(jevko, subNodeId)
-    ret += `edge [label=${JSON.stringify(prefix.trim())}] ${nodeId} -> ${subNodeId}\n`
+    ret += `edge [label=${JSON.stringify(label)}] ${nodeId} -> ${subNodeId}\n`
   }
 
   return ret
